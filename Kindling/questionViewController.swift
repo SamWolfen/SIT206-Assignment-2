@@ -86,7 +86,7 @@ class questionViewController: UIViewController {
         rad11trigger.setImage(UIImage(named: "radioyes.png"), for: UIControlState.normal)
         
         rad12trigger.setImage(UIImage(named: "radiono.png"), for: UIControlState.normal)
-        
+        //driving
         Globals.transport = 1;
         
         
@@ -97,7 +97,7 @@ class questionViewController: UIViewController {
         rad11trigger.setImage(UIImage(named: "radiono.png"), for: UIControlState.normal)
         
         rad12trigger.setImage(UIImage(named: "radioyes.png"), for: UIControlState.normal)
-        
+        //public transport
         Globals.transport = 2;
     }
     
