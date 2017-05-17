@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import Foundation
 
 class questionViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         
         
     }
@@ -33,12 +37,14 @@ class questionViewController: UIViewController {
     
     @IBAction func text1edit(_ sender: Any) {
         partlab1.text = textfield_1.text;
+        Globals.PartA = textfield_1.text!;
     }
     
     @IBOutlet weak var textfield_2: UITextField!
     
     @IBAction func text2edit(_ sender: Any) {
         partlab2.text = textfield_2.text;
+        Globals.PartB = textfield_2.text!;
     }
     
     
@@ -64,8 +70,14 @@ class questionViewController: UIViewController {
     
     
     //variables
-    var transport: Int=0;
-    var clumsy:Int=0;
+    struct Globals{
+        static var transport: Int=0;
+        static var clumsy:Int=0;
+        static var PartA = "empty field";
+        static var PartB = "empty field";
+        static var Place = "empty field";
+        
+    }
     
     
     
@@ -75,7 +87,7 @@ class questionViewController: UIViewController {
         
         rad12trigger.setImage(UIImage(named: "radiono.png"), for: UIControlState.normal)
         
-        transport = 1;
+        Globals.transport = 1;
         
         
         
@@ -86,7 +98,7 @@ class questionViewController: UIViewController {
         
         rad12trigger.setImage(UIImage(named: "radioyes.png"), for: UIControlState.normal)
         
-        transport = 2;
+        Globals.transport = 2;
     }
     
     //radio group 2
@@ -96,7 +108,7 @@ class questionViewController: UIViewController {
         
         rad22trigger.setImage(UIImage(named: "radiono.png"), for: UIControlState.normal)
         
-        clumsy = 1;
+        Globals.clumsy = 1;
     }
     
     @IBAction func radio_22(_ sender: Any) {
@@ -105,7 +117,10 @@ class questionViewController: UIViewController {
         
         rad22trigger.setImage(UIImage(named: "radioyes.png"), for: UIControlState.normal)
         
-        clumsy = 2;
+        Globals.clumsy = 2;
+        
+        
+
         
     }
     
@@ -113,7 +128,9 @@ class questionViewController: UIViewController {
     
     @IBAction func submit(_ sender: Any) {
         
-        //label1.text = textfield_1.text
+        
+        
+     
     }
     
     

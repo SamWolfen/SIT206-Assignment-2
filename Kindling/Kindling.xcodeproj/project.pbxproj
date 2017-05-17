@@ -19,7 +19,7 @@
 		05F5581E1ECC3724002140BA /* radiono.png in Resources */ = {isa = PBXBuildFile; fileRef = 05F5581C1ECC3724002140BA /* radiono.png */; };
 		05F5581F1ECC3724002140BA /* radioyes.png in Resources */ = {isa = PBXBuildFile; fileRef = 05F5581D1ECC3724002140BA /* radioyes.png */; };
 		05F558211ECC64B8002140BA /* kinlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05F558201ECC64B8002140BA /* kinlogo.png */; };
-		05F558271ECC69BE002140BA /* storyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F558261ECC69BE002140BA /* storyViewController.swift */; };
+		05F5582F1ECC88BE002140BA /* storyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F5582E1ECC88BE002140BA /* storyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		05F5581C1ECC3724002140BA /* radiono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiono.png; sourceTree = "<group>"; };
 		05F5581D1ECC3724002140BA /* radioyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radioyes.png; sourceTree = "<group>"; };
 		05F558201ECC64B8002140BA /* kinlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kinlogo.png; sourceTree = "<group>"; };
-		05F558261ECC69BE002140BA /* storyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyViewController.swift; sourceTree = "<group>"; };
+		05F5582E1ECC88BE002140BA /* storyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = storyViewController.swift; path = ../storyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,8 @@
 		05A4C3631ECAAB2A007A5974 /* Kindling */ = {
 			isa = PBXGroup;
 			children = (
+				05F5582E1ECC88BE002140BA /* storyViewController.swift */,
 				05F5581A1ECC2F28002140BA /* questionViewController.swift */,
-				05F558261ECC69BE002140BA /* storyViewController.swift */,
 				05A4C3641ECAAB2A007A5974 /* AppDelegate.swift */,
 				05A4C3661ECAAB2A007A5974 /* ViewController.swift */,
 				05A4C3681ECAAB2A007A5974 /* Main.storyboard */,
@@ -284,7 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05A4C36D1ECAAB2A007A5974 /* Kindling.xcdatamodeld in Sources */,
-				05F558271ECC69BE002140BA /* storyViewController.swift in Sources */,
+				05F5582F1ECC88BE002140BA /* storyViewController.swift in Sources */,
 				05A4C3671ECAAB2A007A5974 /* ViewController.swift in Sources */,
 				05F5581B1ECC2F28002140BA /* questionViewController.swift in Sources */,
 				05A4C3651ECAAB2A007A5974 /* AppDelegate.swift in Sources */,

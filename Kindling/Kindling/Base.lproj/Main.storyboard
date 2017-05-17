@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xDF-6O-oLq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -47,37 +47,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="68" y="-460.11994002998506"/>
-        </scene>
-        <!--Question View Controller-->
-        <scene sceneID="xml-Xi-u6i">
-            <objects>
-                <viewController id="rom-yp-AAa" customClass="questionViewController" customModule="Kindling" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kZb-Nn-9ew"/>
-                        <viewControllerLayoutGuide type="bottom" id="siV-u9-1ra"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="odB-zG-oXq" customClass="Storyview">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tC-Tb-Czk">
-                                <rect key="frame" x="166" y="156" width="42" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="label1" destination="3tC-Tb-Czk" id="0fS-MI-gVh"/>
-                        <outlet property="part1" destination="3tC-Tb-Czk" id="hBC-Gg-Gm5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sWs-XI-Ng4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="68" y="276.61169415292358"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZET-ep-exU">
@@ -136,7 +105,7 @@ generate a new origin story for your relationship</string>
                         <viewControllerLayoutGuide type="top" id="3TP-bt-J2J"/>
                         <viewControllerLayoutGuide type="bottom" id="1Ln-ZM-9wh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yER-MG-RXc" customClass="Questions">
+                    <view key="view" contentMode="scaleToFill" id="yER-MG-RXc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -244,8 +213,7 @@ who is more clumsy?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <action selector="submit:" destination="xDF-6O-oLq" eventType="touchUpInside" id="1SA-jL-iwT"/>
-                                    <segue destination="rom-yp-AAa" kind="show" id="dhD-bl-RMn"/>
+                                    <segue destination="QH0-Rb-Lyl" kind="show" id="m3b-jn-MB6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="el3-Ly-WP9">
@@ -277,6 +245,10 @@ who is more clumsy?</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kinlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="nfU-Wn-d7S">
+                                <rect key="frame" x="0.0" y="-4" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Partner B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H14-sd-8Td">
                                 <rect key="frame" x="261" y="484" width="72" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -284,10 +256,6 @@ who is more clumsy?</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kinlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="nfU-Wn-d7S">
-                                <rect key="frame" x="0.0" y="-4" width="375" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -306,6 +274,44 @@ who is more clumsy?</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Wx-Uy-64e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1749.5999999999999" y="-460.11994002998506"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="RQH-EY-EMt">
+            <objects>
+                <viewController id="QH0-Rb-Lyl" customClass="storyViewController" customModule="Kindling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OBX-Re-V12"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wj6-cD-m0K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4cB-Ez-MNf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA2-qk-FHr">
+                                <rect key="frame" x="143" y="273" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="QH0-Rb-Lyl" eventType="touchUpInside" id="m1H-SD-2FL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnD-vu-lhg">
+                                <rect key="frame" x="143" y="171" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="EnD-vu-lhg" id="20c-nk-0TX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xx3-Eb-lGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2513" y="-460"/>
         </scene>
     </scenes>
     <resources>
