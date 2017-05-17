@@ -113,7 +113,7 @@ class questionViewController: UIViewController {
     
     @IBAction func submit(_ sender: Any) {
         
-        label1.text = textfield_1.text
+        //label1.text = textfield_1.text
     }
     
     
