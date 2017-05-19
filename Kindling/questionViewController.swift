@@ -71,8 +71,8 @@ class questionViewController: UIViewController {
     
     //variables
     struct Globals{
-        static var transport: Int=0;
-        static var clumsy:Int=0;
+        static var transport: Int=1;
+        static var clumsy:Int=1;
         static var PartA = "empty field";
         static var PartB = "empty field";
         static var Place = "empty field";

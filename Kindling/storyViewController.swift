@@ -191,14 +191,14 @@ class storyViewController: UIViewController {
             sect3 = "their eyes met and sparks flew, as if this app was charging by the cliche. \"Hi I'm \(PartB)\" stammered \(PartB), clearly too stunned to speak properly. \"I'm \(PartA)\" \(PartA) replied shyly. \"Wanna go get a coffee or something?\" asked \(PartB). \"Sounds good to me\" they replied. "
         }
         
-        if rand3 == 1 && CarTrouble == 1 && Clumsy == 1{
+        if CarTrouble == 1 && Clumsy == 1 && PBatplace == 0 && PAatplace == 0{
             sect3 = "the car began to splutter so \(PartA) pulled over and checked the car. How could they have forgotten to top up the radiator for so long? Fortunatly \(PartB) was walking by and asked what was wrong. When \(PartA) explained, \(PartB) offered their water bottle to fill the radiator. Amazingly it worked and \(PartA) offered to take \(PartB) out to lunch as a thank you. They accepted the offer"
             HaveMet=1;
         }
         
         
         
-        if rand3 == 1 && CarTrouble == 1 && Clumsy == 2{
+        if CarTrouble == 1 && Clumsy == 2 && PBatplace == 0 && PAatplace == 0{
             sect3 = "the car began to splutter so \(PartB) pulled over and checked the car. How could they have forgotten to top up the radiator for so long? Fortunatly \(PartA) was walking by and asked what was wrong. When \(PartB) explained, \(PartA) offered their water bottle to fill the radiator. Amazingly it worked and \(PartB) offered to take \(PartA) out to lunch as a thank you. They accepted the offer"
             HaveMet=1;
         }
